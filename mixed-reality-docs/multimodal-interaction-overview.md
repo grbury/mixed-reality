@@ -8,7 +8,7 @@ ms.topic: article
 keywords: Mixed Reality, Gaze, gaze targeting, interaction, design
 ---
 
-# Introducing Instinctual Interactions
+# Introducing Instinctual Interactions 
 The philosophy of simple, instinctual interactions is woven throughout the Microsoft Mixed Reality platform, from hardware to software. 
 
 These instinctual interactions utilize all available input technologies, including inside out tracking, hand tracking, eye tracking, and natural language, in seamless multimodal interaction models.  Based on our research, designing and developing multimodally, and not based on single inputs, is critical to creating instinctive experiences. 
