@@ -5,6 +5,7 @@ author: BrandonBray
 ms.author: branbray
 ms.date: 03/21/2018
 ms.topic: article
+ms.localizationpriority: high
 keywords: mixed reality, holographic, ar, vr, mr, xr, augmented reality, virtual reality, explanation
 ---
 
