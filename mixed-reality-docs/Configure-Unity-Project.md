@@ -2,7 +2,7 @@
 title: Configure a New Unity Project for Windows Mixed Reality 
 description: configure Unity project without MRTK
 author: yoyoz
-ms.author: Yoyoz
+ms.author: kurtie
 ms.date: 04/15/2018
 ms.topic: article
 keywords: Unity, mixed reality, development, getting started, new project
