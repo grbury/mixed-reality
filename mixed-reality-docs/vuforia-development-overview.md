@@ -2,7 +2,7 @@
 title: Using Vuforia with Unity
 description: Leverage Vuforia to build Windows Mixed Reality applications in Unity.
 author: ailyadis
-ms.author: 
+ms.author: kevincol
 ms.date: 01/28/2019
 ms.topic: article
 keywords: Vuforia, markers, coordinates, frame of reference, tracking
