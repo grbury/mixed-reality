@@ -27,11 +27,11 @@ Start by enabling **Developer Mode** on your device so Visual Studio can connect
 
 ### HoloLens
 1. Turn on your HoloLens and put on the device.
-2. Perform the [bloom](gestures.md#bloom) gesture (1st gen) or system gesture (HoloLens 2) to launch the main menu.
-3. Gaze (1st gen) or point (HoloLens 2) at the **Settings** tile and perform the [air-tap](gestures.md#air-tap) gesture. Perform a second air tap to place the app in your environment. The Settings app will launch after you place it.
+2. Perform the [bloom](gestures.md#bloom) gesture on HoloLens (1st gen) or system gesture on HoloLens 2 to launch the main menu.
+3. Open the **Settings** app from the Start menu. Tap to place the app in your environment. The Settings app will launch after you place it.
 4. Select the **Update** menu item.
 5. Select the **For developers** menu item.
-6. Enable **Developer Mode**. This will allow you to [deploy apps from Visual Studio](using-visual-studio.md) to your HoloLens.
+6. Enable **Developer mode**. This will allow you to [deploy apps from Visual Studio](using-visual-studio.md) to your HoloLens.
 7. Optional: Scroll down and also enable **Device Portal**. This will also allow you to connect to the [Windows Device Portal](using-the-windows-device-portal.md) on your HoloLens from a web browser.
 
 ### Windows PC
@@ -42,40 +42,50 @@ If you are working with a Windows Mixed Reality headset connected to your PC, yo
 3. Select **For developers**
 4. Enable **Developer Mode**, read the disclaimer for the setting you chose, then click Yes to accept the change.
 
-## Deploying an app over Wi-Fi - HoloLens (1st gen)
-1. Select an **x86** build configuration for your app
-![x86 build configuration in Visual Studio](images/x86setting.png)
-2. Select **Remote Machine** in the deployment target drop-down menu ![Remote machine deployment target in Visual Studio](images/remotemachinesetting.png)
-3. For C++ and JavaScript projects, go to **Project > Properties > Configuration Properties > Debugging**. For C# projects, a dialog will automatically pop-up to configure your connection.
-  a. Enter the IP address of your device in the **Address** or **Machine Name** field. Find the IP address on your HoloLens under **Settings > Network & Internet > Advanced Options**, or you can ask Cortana "What is my IP address?"
-  b. Set Authentication Mode to **Universal (Unencrypted protocol)**![Remote connection dialog in Visual Studio](images/remotedeploy.png)
-4. Select **Debug > Start debugging** to deploy your app and start debugging![Start Without Debugging in Visual Studio](images/deploywithdebugging.png)
-5. The first time you deploy an app to your HoloLens from your PC, you will be prompted for a PIN. Follow the **Pairing your device** instructions below.
-
 ## Deploying an app over Wi-Fi - HoloLens 2
 1. Select an **ARM** or **ARM64** build configuration for your app 
-![ARM64 build configuration in Visual Studio](images/arm64setting.png)
-2. Select **Remote Machine** in the deployment target drop-down menu ![Remote machine deployment target in Visual Studio](images/remotemachinesetting_arm64.png)
+<br> ![ARM64 build configuration in Visual Studio](images/arm64setting.png)
+2. Select **Remote Machine** in the deployment target drop-down menu
+<br> ![Remote machine deployment target in Visual Studio](images/remotemachinesetting_arm64.png)
 3. For C++ and JavaScript projects, go to **Project > Properties > Configuration Properties > Debugging**. For C# projects, a dialog will automatically pop-up to configure your connection.
   a. Enter the IP address of your device in the **Address** or **Machine Name** field. Find the IP address on your HoloLens under **Settings > Network & Internet > Advanced Options**, or you can ask Cortana "What is my IP address?"
-  b. Set Authentication Mode to **Universal (Unencrypted protocol)**![Remote connection dialog in Visual Studio](images/remotedeploy.png)
-4. Select **Debug > Start debugging** to deploy your app and start debugging![Start Without Debugging in Visual Studio](images/deploywithdebugging.png)
+  b. Set Authentication Mode to **Universal (Unencrypted protocol)**
+<br> ![Remote connection dialog in Visual Studio](images/remotedeploy.png)
+4. Select **Debug > Start debugging** to deploy your app and start debugging
+<br> ![Start Without Debugging in Visual Studio](images/deploywithdebugging.png)
+5. The first time you deploy an app to your HoloLens from your PC, you will be prompted for a PIN. Follow the **Pairing your device** instructions below.
+
+## Deploying an app over Wi-Fi - HoloLens (1st gen)
+1. Select an **x86** build configuration for your app 
+<br> ![x86 build configuration in Visual Studio](images/x86setting.png)
+2. Select **Remote Machine** in the deployment target drop-down menu
+<br> ![Remote machine deployment target in Visual Studio](images/remotemachinesetting.png)
+3. For C++ and JavaScript projects, go to **Project > Properties > Configuration Properties > Debugging**. For C# projects, a dialog will automatically pop-up to configure your connection.
+  a. Enter the IP address of your device in the **Address** or **Machine Name** field. Find the IP address on your HoloLens under **Settings > Network & Internet > Advanced Options**, or you can ask Cortana "What is my IP address?"
+  b. Set Authentication Mode to **Universal (Unencrypted protocol)**
+<br> ![Remote connection dialog in Visual Studio](images/remotedeploy.png)
+4. Select **Debug > Start debugging** to deploy your app and start debugging
+<br> ![Start Without Debugging in Visual Studio](images/deploywithdebugging.png)
 5. The first time you deploy an app to your HoloLens from your PC, you will be prompted for a PIN. Follow the **Pairing your device** instructions below.
 
 If your HoloLens IP address changes, you can change the IP address of the target machine by going to **Project > Properties > Configuration Properties > Debugging**
 
-## Deploying an app over USB - HoloLens (1st gen)
-1. Select an **x86** build configuration for your app
-![x86 build configuration in Visual Studio](images/x86setting.png)
-2. Select **Device** in the deployment target drop-down menu![Device deployment in Visual Studio](images/buildsettingsusbdeploy.png)
-3. Select **Debug > Start debugging** to deploy your app and start debugging![Start Without Debugging in Visual Studio](images/deploywithdebugging.png)
-4. The first time you deploy an app to your HoloLens from your PC, you will be prompted for a PIN. Follow the **Pairing your device** instructions below.
-
 ## Deploying an app over USB - HoloLens 2
 1. Select an **ARM** or **ARM64** build configuration for your app
-![ARM64 build configuration in Visual Studio](images/arm64setting.png)
-2. Select **Device** in the deployment target drop-down menu![Device deployment in Visual Studio](images/buildsettingsusbdeploy_arm64.png)
-3. Select **Debug > Start debugging** to deploy your app and start debugging![Start Without Debugging in Visual Studio](images/deploywithdebugging.png)
+<br> ![ARM64 build configuration in Visual Studio](images/arm64setting.png)
+2. Select **Device** in the deployment target drop-down menu
+<br> ![Device deployment in Visual Studio](images/buildsettingsusbdeploy_arm64.png)
+3. Select **Debug > Start debugging** to deploy your app and start debugging
+<br> ![Start Without Debugging in Visual Studio](images/deploywithdebugging.png)
+4. The first time you deploy an app to your HoloLens from your PC, you will be prompted for a PIN. Follow the **Pairing your device** instructions below.
+
+## Deploying an app over USB - HoloLens (1st gen)
+1. Select an **x86** build configuration for your app
+<br> ![x86 build configuration in Visual Studio](images/x86setting.png)
+2. Select **Device** in the deployment target drop-down menu
+<br> ![Device deployment in Visual Studio](images/buildsettingsusbdeploy.png)
+3. Select **Debug > Start debugging** to deploy your app and start debugging
+<br> ![Start Without Debugging in Visual Studio](images/deploywithdebugging.png)
 4. The first time you deploy an app to your HoloLens from your PC, you will be prompted for a PIN. Follow the **Pairing your device** instructions below.
 
 ## Deploying an app to your Local PC - immersive headset
@@ -91,19 +101,23 @@ The first time you deploy an app from Visual Studio to your HoloLens, you will b
 
 To un-pair your HoloLens from all computers it was paired with, launch the **Settings** app, go to **Update > For Developers** and tap on **Clear**.
 
-## Deploying an app to the HoloLens (1st gen) Emulator
-1. Make sure you have **[installed the HoloLens Emulator](install-the-tools.md)**.
-2. Select an **x86** build configuration for your app.
-![x86 build configuration in Visual Studio](images/x86setting.png)
-3. Select **HoloLens Emulator** in the deployment target drop-down menu![Emulator target in Visual Studio](images/deployemulator.png)
-4. Select **Debug > Start debugging** to deploy your app and start debugging![Start Without Debugging in Visual Studio](images/deploywithdebugging.png)
-
 ## Deploying an app to the HoloLens 2 Emulator
 1. Make sure you have **[installed the HoloLens Emulator](install-the-tools.md)**.
 2. Select an **x86** or **x64** build configuration for your app.
-![x86 build configuration in Visual Studio](images/x86setting.png)
-3. Select **HoloLens 2 Emulator** in the deployment target drop-down menu![Emulator target in Visual Studio](images/deployemulator2.png)
-4. Select **Debug > Start debugging** to deploy your app and start debugging![Start Without Debugging in Visual Studio](images/deploywithdebugging.png)
+<br> ![x86 build configuration in Visual Studio](images/x86setting.png)
+3. Select **HoloLens 2 Emulator** in the deployment target drop-down menu
+<br> ![Emulator target in Visual Studio](images/deployemulator2.png)
+4. Select **Debug > Start debugging** to deploy your app and start debugging
+<br> ![Start Without Debugging in Visual Studio](images/deploywithdebugging.png)
+
+## Deploying an app to the HoloLens (1st gen) Emulator
+1. Make sure you have **[installed the HoloLens Emulator](install-the-tools.md)**.
+2. Select an **x86** build configuration for your app.
+<br> ![x86 build configuration in Visual Studio](images/x86setting.png)
+3. Select **HoloLens Emulator** in the deployment target drop-down menu
+<br> ![Emulator target in Visual Studio](images/deployemulator.png)
+4. Select **Debug > Start debugging** to deploy your app and start debugging
+<br> ![Start Without Debugging in Visual Studio](images/deploywithdebugging.png)
 
 ## Graphics Debugger for HoloLens (1st gen)
 
